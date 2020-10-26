@@ -11,9 +11,8 @@ class CirclesViewController: UIViewController {
     
     @IBOutlet weak var mainStackView: UIStackView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         self.mainStackView.spacing = 2
         
@@ -27,8 +26,7 @@ class CirclesViewController: UIViewController {
             
             circleStackView.animateInfiniteLoop()
         }
-        
     }
-
+    
 }
 
