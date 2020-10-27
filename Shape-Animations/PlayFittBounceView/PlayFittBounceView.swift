@@ -39,7 +39,7 @@ class PlayFittBounceView: UIView, NibLoadable {
         
         let isExpanding = self.extendoLLength.constant == extended
         
-        UIView.animate(withDuration: isExpanding ? 0.4 : 0.6,
+        UIView.animate(withDuration: isExpanding ? 0.4 : 0.7,
                        delay: isExpanding ? 0 : 0.2,
                        options: isExpanding ? .curveEaseOut : .curveEaseInOut) {
             

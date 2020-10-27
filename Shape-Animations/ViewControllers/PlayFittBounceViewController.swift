@@ -35,7 +35,7 @@ class PlayFittBounceViewController: UIViewController {
         
         for i in 0..<pfViews.count {
             
-            pfViews[i].setColour(colourForIndex(i))
+            pfViews[i].setColour(UIView.colourForIndex(i))
             
             DispatchQueue.main.asyncAfter(deadline: .now() + (0.05 * Double(i))) {
                 
@@ -44,16 +44,6 @@ class PlayFittBounceViewController: UIViewController {
         }
     }
     
-    func colourForIndex(_ index:Int) -> UIColor {
-        switch index {
-        case 0: return .systemPurple
-        case 1: return .systemBlue
-        case 2: return .systemTeal
-        case 3: return .systemGreen
-        case 4: return .systemYellow
-        case 5: return .systemOrange
-        case 6: return .systemPink
-        default: return .white
-        }
-    }
+    
 }
+
