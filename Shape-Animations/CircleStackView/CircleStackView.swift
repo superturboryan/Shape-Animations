@@ -38,6 +38,7 @@ class CircleStackView: UIStackView {
         
         
         self.axis = .horizontal
+        self.spacing = -30
         
         // TODO: Use config to set up accordingly
         
@@ -76,26 +77,18 @@ class CircleStackView: UIStackView {
     func performCircleAnimation() {
             
         let firstCurrentWidth = self.circles[0].frame.width
-        let secondCurrentWidth = self.circles[1].frame.width
         
         let firstNewWidth = firstCurrentWidth == self.frame.size.width * small ?
             self.frame.size.width * big :
             self.frame.size.width * small
         
-        let secondNewWidth = secondCurrentWidth == self.frame.size.width * small ?
-            self.frame.size.width * big :
-            self.frame.size.width * small
-        
         self.firstCircleWidthConstraint?.constant = firstNewWidth
 
-        UIView .animate(withDuration: 0.7,
-                        delay: 0.1,
+        UIView .animate(withDuration: 0.55,
+                        delay: 0.03,
                         options: .curveEaseInOut) {
             
             self.layoutIfNeeded()
-            
-            self.circles[0].layer.cornerRadius = firstNewWidth == self.frame.size.width * self.small ? 22 : 33
-            self.circles[1].layer.cornerRadius = secondNewWidth == self.frame.size.width * self.small ? 22 : 33
             
         } completion: { (finished) in
             
@@ -103,10 +96,11 @@ class CircleStackView: UIStackView {
         }
     }
     
-    func circleView(withColor color:UIColor) -> UIView {
-        let circle = UIView()
-        circle.backgroundColor = color
-        circle.clipsToBounds = true
+    func circleView(withColor color:UIColor) -> UIImageView {
+        let circle = UIImageView(image: UIImage(systemName: "circle.fill"))
+        circle.tintColor = color
+        circle.scalesLargeContentImage = true
+        circle.contentMode = .scaleToFill
         return circle
     }
 

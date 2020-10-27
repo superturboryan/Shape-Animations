@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		948296E625479E3500B93641 /* PlayFittBounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948296E525479E3500B93641 /* PlayFittBounceViewController.swift */; };
+		948296EA25479EF000B93641 /* PlayFittBounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948296E925479EF000B93641 /* PlayFittBounceView.swift */; };
+		948296EE25479F0300B93641 /* PlayFittBounceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948296ED25479F0300B93641 /* PlayFittBounceView.xib */; };
 		94C259C42547445600EDB439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259C32547445600EDB439 /* AppDelegate.swift */; };
 		94C259C62547445600EDB439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259C52547445600EDB439 /* SceneDelegate.swift */; };
 		94C259C82547445600EDB439 /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259C72547445600EDB439 /* CirclesViewController.swift */; };
@@ -15,9 +18,13 @@
 		94C259D02547445800EDB439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C259CE2547445800EDB439 /* LaunchScreen.storyboard */; };
 		94C259DC2547459900EDB439 /* CircleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259DB2547459900EDB439 /* CircleStackView.swift */; };
 		94C259EA2547614100EDB439 /* SecondCirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259E92547614100EDB439 /* SecondCirclesViewController.swift */; };
+		94C259EE2547828400EDB439 /* CircleTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C259ED2547828400EDB439 /* CircleTriangleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		948296E525479E3500B93641 /* PlayFittBounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFittBounceViewController.swift; sourceTree = "<group>"; };
+		948296E925479EF000B93641 /* PlayFittBounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFittBounceView.swift; sourceTree = "<group>"; };
+		948296ED25479F0300B93641 /* PlayFittBounceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayFittBounceView.xib; sourceTree = "<group>"; };
 		94C259C02547445600EDB439 /* Shape-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shape-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C259C32547445600EDB439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94C259C52547445600EDB439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +35,7 @@
 		94C259D12547445800EDB439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C259DB2547459900EDB439 /* CircleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleStackView.swift; sourceTree = "<group>"; };
 		94C259E92547614100EDB439 /* SecondCirclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCirclesViewController.swift; sourceTree = "<group>"; };
+		94C259ED2547828400EDB439 /* CircleTriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTriangleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		948296E825479ED500B93641 /* PlayFittBounceView */ = {
+			isa = PBXGroup;
+			children = (
+				948296E925479EF000B93641 /* PlayFittBounceView.swift */,
+				948296ED25479F0300B93641 /* PlayFittBounceView.xib */,
+			);
+			path = PlayFittBounceView;
+			sourceTree = "<group>";
+		};
 		94C259B72547445600EDB439 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +77,12 @@
 		94C259C22547445600EDB439 /* Shape-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				948296E825479ED500B93641 /* PlayFittBounceView */,
+				94C259F02547828C00EDB439 /* ViewControllers */,
 				94C259D92547456F00EDB439 /* CircleStackView */,
+				94C259C92547445600EDB439 /* Main.storyboard */,
 				94C259C32547445600EDB439 /* AppDelegate.swift */,
 				94C259C52547445600EDB439 /* SceneDelegate.swift */,
-				94C259C72547445600EDB439 /* CirclesViewController.swift */,
-				94C259E92547614100EDB439 /* SecondCirclesViewController.swift */,
-				94C259C92547445600EDB439 /* Main.storyboard */,
 				94C259CC2547445800EDB439 /* Assets.xcassets */,
 				94C259CE2547445800EDB439 /* LaunchScreen.storyboard */,
 				94C259D12547445800EDB439 /* Info.plist */,
@@ -79,6 +96,17 @@
 				94C259DB2547459900EDB439 /* CircleStackView.swift */,
 			);
 			path = CircleStackView;
+			sourceTree = "<group>";
+		};
+		94C259F02547828C00EDB439 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				94C259C72547445600EDB439 /* CirclesViewController.swift */,
+				94C259E92547614100EDB439 /* SecondCirclesViewController.swift */,
+				94C259ED2547828400EDB439 /* CircleTriangleViewController.swift */,
+				948296E525479E3500B93641 /* PlayFittBounceViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +169,7 @@
 				94C259D02547445800EDB439 /* LaunchScreen.storyboard in Resources */,
 				94C259CD2547445800EDB439 /* Assets.xcassets in Resources */,
 				94C259CB2547445600EDB439 /* Main.storyboard in Resources */,
+				948296EE25479F0300B93641 /* PlayFittBounceView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +183,11 @@
 				94C259C82547445600EDB439 /* CirclesViewController.swift in Sources */,
 				94C259C42547445600EDB439 /* AppDelegate.swift in Sources */,
 				94C259C62547445600EDB439 /* SceneDelegate.swift in Sources */,
+				948296E625479E3500B93641 /* PlayFittBounceViewController.swift in Sources */,
 				94C259EA2547614100EDB439 /* SecondCirclesViewController.swift in Sources */,
+				94C259EE2547828400EDB439 /* CircleTriangleViewController.swift in Sources */,
 				94C259DC2547459900EDB439 /* CircleStackView.swift in Sources */,
+				948296EA25479EF000B93641 /* PlayFittBounceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
