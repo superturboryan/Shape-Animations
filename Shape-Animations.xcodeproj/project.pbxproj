@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9479E0A62548B55B00FE92EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479E0A52548B55B00FE92EC /* UIView+Extension.swift */; };
+		9479E0D8254A55AF00FE92EC /* NibLoadableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479E0D7254A55AE00FE92EC /* NibLoadableProtocol.swift */; };
+		9479E0DD254A58E900FE92EC /* LargeTextScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479E0DC254A58E900FE92EC /* LargeTextScrollViewController.swift */; };
 		948296E625479E3500B93641 /* PlayFittBounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948296E525479E3500B93641 /* PlayFittBounceViewController.swift */; };
 		948296EA25479EF000B93641 /* PlayFittBounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948296E925479EF000B93641 /* PlayFittBounceView.swift */; };
 		948296EE25479F0300B93641 /* PlayFittBounceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948296ED25479F0300B93641 /* PlayFittBounceView.xib */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		9479E0A52548B55B00FE92EC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9479E0D7254A55AE00FE92EC /* NibLoadableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableProtocol.swift; sourceTree = "<group>"; };
+		9479E0DC254A58E900FE92EC /* LargeTextScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTextScrollViewController.swift; sourceTree = "<group>"; };
 		948296E525479E3500B93641 /* PlayFittBounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFittBounceViewController.swift; sourceTree = "<group>"; };
 		948296E925479EF000B93641 /* PlayFittBounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFittBounceView.swift; sourceTree = "<group>"; };
 		948296ED25479F0300B93641 /* PlayFittBounceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayFittBounceView.xib; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9479E0DA254A55C200FE92EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9479E0A52548B55B00FE92EC /* UIView+Extension.swift */,
+				9479E0D7254A55AE00FE92EC /* NibLoadableProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		948296E825479ED500B93641 /* PlayFittBounceView */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		94C259C22547445600EDB439 /* Shape-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				9479E0DA254A55C200FE92EC /* Extensions */,
 				948296E825479ED500B93641 /* PlayFittBounceView */,
 				94C259F02547828C00EDB439 /* ViewControllers */,
 				94C259D92547456F00EDB439 /* CircleStackView */,
@@ -90,7 +104,6 @@
 				94C259CC2547445800EDB439 /* Assets.xcassets */,
 				94C259CE2547445800EDB439 /* LaunchScreen.storyboard */,
 				94C259D12547445800EDB439 /* Info.plist */,
-				9479E0A52548B55B00FE92EC /* UIView+Extension.swift */,
 			);
 			path = "Shape-Animations";
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 				94C259ED2547828400EDB439 /* CircleTriangleViewController.swift */,
 				948296E525479E3500B93641 /* PlayFittBounceViewController.swift */,
 				948296F22547C32300B93641 /* SpinningGritViewController.swift */,
+				9479E0DC254A58E900FE92EC /* LargeTextScrollViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,7 +205,9 @@
 				94C259C42547445600EDB439 /* AppDelegate.swift in Sources */,
 				94C259C62547445600EDB439 /* SceneDelegate.swift in Sources */,
 				948296E625479E3500B93641 /* PlayFittBounceViewController.swift in Sources */,
+				9479E0D8254A55AF00FE92EC /* NibLoadableProtocol.swift in Sources */,
 				94C259EA2547614100EDB439 /* SecondCirclesViewController.swift in Sources */,
+				9479E0DD254A58E900FE92EC /* LargeTextScrollViewController.swift in Sources */,
 				94C259EE2547828400EDB439 /* CircleTriangleViewController.swift in Sources */,
 				94C259DC2547459900EDB439 /* CircleStackView.swift in Sources */,
 				9479E0A62548B55B00FE92EC /* UIView+Extension.swift in Sources */,

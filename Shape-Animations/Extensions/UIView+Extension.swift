@@ -42,7 +42,7 @@ public extension UIView {
         self.layer.addSublayer(pulsatingLayer)
         
         let animationGroup = CAAnimationGroup()
-        animationGroup.animations = [growAnimation(),]
+        animationGroup.animations = [growAnimation(), /* fadeAnimation(), */ ]
         animationGroup.duration = 2.0
         animationGroup.fillMode = .forwards
         animationGroup.isRemovedOnCompletion = false
@@ -52,6 +52,7 @@ public extension UIView {
         CATransaction.begin()
         CATransaction.setCompletionBlock {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                // Remove layer after animation completes
                 pulsatingLayer.removeFromSuperlayer()
             }
         }
@@ -71,7 +72,7 @@ public extension UIView {
     private func fadeAnimation() -> CABasicAnimation {
         
         let animation = CABasicAnimation(keyPath: "opacity")
-        animation.toValue = 0.3
+        animation.toValue = 0.0
         //        animation.duration = 1.0
         
         

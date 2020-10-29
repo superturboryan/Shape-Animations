@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1169" y="139"/>
         </scene>
         <!--Fourth-->
         <scene sceneID="g1u-9E-gZc">
@@ -90,7 +90,7 @@
                             <constraint firstItem="8wH-xu-lYP" firstAttribute="trailing" secondItem="WkL-cN-Slr" secondAttribute="trailing" id="oZR-q8-CCM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fourth" image="circle" catalog="system" id="nDv-9e-pqb"/>
+                    <tabBarItem key="tabBarItem" title="Fourth" image="textformat.abc.dottedunderline" catalog="system" id="nDv-9e-pqb"/>
                     <connections>
                         <outlet property="mainStackView" destination="WkL-cN-Slr" id="do1-eY-cBe"/>
                         <outlet property="pf1" destination="Qzf-Ls-T4Z" id="f1V-14-mzm"/>
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkx-G7-wRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-986" y="958"/>
+            <point key="canvasLocation" x="3935" y="139"/>
         </scene>
         <!--Third-->
         <scene sceneID="h7v-9D-AWo">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMw-kN-3Ao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.600000000000001" y="969.26536731634189"/>
+            <point key="canvasLocation" x="2946" y="139"/>
         </scene>
         <!--Second-->
         <scene sceneID="6cH-PY-94X">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zq0-JJ-E2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="970.16491754122944"/>
+            <point key="canvasLocation" x="2066" y="139"/>
         </scene>
         <!--Fifth-->
         <scene sceneID="ajs-bz-0Sj">
@@ -285,7 +285,7 @@
                             <constraint firstItem="5Uw-fq-nTe" firstAttribute="centerY" secondItem="hgS-Wa-7Ih" secondAttribute="centerY" id="y1t-0P-T5g"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fifth" image="circle.grid.cross.right.fill" catalog="system" id="ViG-nz-ZcB"/>
+                    <tabBarItem key="tabBarItem" title="Fifth" image="circle" catalog="system" id="ViG-nz-ZcB"/>
                     <connections>
                         <outlet property="bgView" destination="Crb-H8-0Tn" id="5K5-41-dPO"/>
                         <outlet property="imageView" destination="5Uw-fq-nTe" id="har-P7-5rD"/>
@@ -293,7 +293,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIi-Hw-BRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1025" y="113"/>
+            <point key="canvasLocation" x="4850" y="139"/>
+        </scene>
+        <!--Sixth-->
+        <scene sceneID="sT9-0K-EvX">
+            <objects>
+                <viewController id="U2Q-qn-srG" customClass="LargeTextScrollViewController" customModule="Shape_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VcB-ZR-fIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYFITT" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk8-P1-BDg">
+                                <rect key="frame" x="5" y="133.5" width="3400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3400" id="Gzz-LG-kWi"/>
+                                    <constraint firstAttribute="height" constant="400" id="Lzm-uO-SFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="550"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hH7-qp-qou"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xk8-P1-BDg" firstAttribute="centerY" secondItem="VcB-ZR-fIv" secondAttribute="centerY" id="Ivn-cm-0Ot"/>
+                            <constraint firstItem="Xk8-P1-BDg" firstAttribute="leading" secondItem="VcB-ZR-fIv" secondAttribute="leading" constant="5" id="cob-Oj-C0Z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sixth" image="textformat.superscript" catalog="system" id="4Y3-8a-Qil"/>
+                    <connections>
+                        <outlet property="mainTextLabel" destination="Xk8-P1-BDg" id="i4y-Su-ZHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVm-Tt-SF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="895"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tXJ-lQ-Mfa">
@@ -312,11 +347,12 @@
                         <segue destination="1eC-eL-C61" kind="relationship" relationship="viewControllers" id="zMu-XR-H3C"/>
                         <segue destination="R9z-VX-qei" kind="relationship" relationship="viewControllers" id="K1o-2e-JtE"/>
                         <segue destination="uyK-Ga-6G6" kind="relationship" relationship="viewControllers" id="aUz-ay-wDa"/>
+                        <segue destination="U2Q-qn-srG" kind="relationship" relationship="viewControllers" id="iG9-sK-25s"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnP-Ga-Mpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2945" y="-1024"/>
         </scene>
     </scenes>
     <resources>
@@ -324,8 +360,9 @@
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
-        <image name="circle.grid.cross.right.fill" catalog="system" width="128" height="125"/>
         <image name="circles.hexagonpath.fill" catalog="system" width="128" height="112"/>
+        <image name="textformat.abc.dottedunderline" catalog="system" width="128" height="81"/>
+        <image name="textformat.superscript" catalog="system" width="128" height="124"/>
         <image name="triangle.fill" catalog="system" width="128" height="112"/>
         <image name="whiteGrit" width="201" height="200"/>
         <systemColor name="systemIndigoColor">

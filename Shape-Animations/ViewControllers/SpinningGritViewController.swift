@@ -37,7 +37,7 @@ class SpinningGritViewController: UIViewController {
             self.bgView.addPulsatingLayer(withColor: color)
         }
         
-        UIView.animate(withDuration: isExpanding ? 0.45 : 0.55,
+        UIView.animate(withDuration: isExpanding ? 0.45 : 0.65,
                        delay: isExpanding ? 0.0 : 0.05,
                        options: .curveEaseInOut) {
             
