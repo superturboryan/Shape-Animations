@@ -1,6 +1,6 @@
 # Shape-Animations
 
-Exploring and re-creating different looping animations using Native iOS APIs
+Exploring and re-creating different looping animations using UIKit
 
 Inspired by http://charlielemaignan.com/projects/shapes
 
